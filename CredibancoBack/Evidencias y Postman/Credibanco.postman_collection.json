@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "95b9777e-ef71-4c11-b79b-6cbbca10102d",
+		"name": "Credibanco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7462188"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4000/card/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/card/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"card",
+						"all"
+					]
+				},
+				"description": "Credibanco1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/card/enroll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroproducto\": \"0987654321\",\r\n    \"numerotarjeta\": \"0987654321123456\",\r\n    \"fechacreacion\": \"2023-09-12\",\r\n    \"fechavencimiento\": \"2025-09-12\",\r\n    \"saldo\": \"1000000\",\r\n    \"activa_tarjeta\": 1,\r\n    \"bloqueada_tarjeta\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/card/enroll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"card",
+						"enroll"
+					]
+				},
+				"description": "Consumo 3"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/card/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/card/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"card",
+						"5"
+					]
+				},
+				"description": "Consumo 2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/card/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/card/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"card",
+						"4"
+					]
+				},
+				"description": "Consumo 4"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/card/balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numerotarjeta\": \"1234567890121456\",\r\n    \"saldo\": \"10000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/card/balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"card",
+						"balance"
+					]
+				},
+				"description": "Consumo 5"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/card/balance/1234567890121456",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/card/balance/1234567890121456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"card",
+						"balance",
+						"1234567890121456"
+					]
+				},
+				"description": "Consumo 6"
+			},
+			"response": []
+		}
+	]
+}
